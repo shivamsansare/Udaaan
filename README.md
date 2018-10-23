@@ -1,6 +1,6 @@
 # Udaan
 
-Airline Resservation System, beta program
+Airline Reservation System, beta program
 It uses a custom mysql database to reserve aeroplane tickets
 Note that this ticket is dummy and won't work for actual reservation.
 
