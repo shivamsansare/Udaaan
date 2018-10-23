@@ -14,7 +14,7 @@
 			});
 			$("#history").click(function(){
 				// $("table:first").replaceWith("<table><% b.forEach(function(p){ %><tr><td>Airways</td><td>Source</td><td>Destination</td></tr><tr><td><%= p['name'] %></td><td><%= p['source'] %></td><td><%= p['destination'] %></td></tr><tr><td>Departure Date<td><td><%= p['Dep_dateTime'] %></td></tr><tr><td>Arrival Date<td><td><%= p['arrival_dateTime'] %></td></tr> <% }); %> </table>");
-				$("table:first").replaceWith("<table><tr><td>Airways</td><td>Source</td><td>Destination</td><td>Departure Date</td><td>Arrival Date</td></tr><% b.forEach(function(p){ %><tr><td><%= p['name'] %></td><td><%= p['source'] %></td><td><%= p['destination'] %></td><td><%= p['Dep_dateTime'] %></td><td><%= p['arrival_dateTime'] %></td></tr><% }); %></table>");
+				$("table:first").replaceWith("<table><tr><td>Airways</td><td>Source</td><td>Destination</td><td>Departure Date</td><td>Arrival Date</td><td>Name</td></tr><% b.forEach(function(p){ %><tr><td><%= p['name'] %></td><td><%= p['source'] %></td><td><%= p['destination'] %></td><td><%= p['Dep_dateTime'] %></td><td><%= p['arrival_dateTime'] %></td><td><%= p['firstname'] %> <%= p['lastname'] %></td></tr><% }); %></table>");
 				$(".active").removeClass("active");
 				$("#history").parent().addClass("active");
 				});
@@ -26,20 +26,6 @@
 		});
 	</script>
 	
-	<style>
-		table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-tr:hover {background-color:#f5f5f5;}
-	</style>
 	
 	<!------ Include the above in your HEAD tag ---------->
 	<link rel = "stylesheet" href = "/stylesheets/dashboard.css">
@@ -77,8 +63,8 @@ tr:hover {background-color:#f5f5f5;}
 					<!-- SIDEBAR BUTTONS -->
 					
 					<div class="profile-userbuttons">
-						<!--<button type="button" class="btn btn-success btn-sm">Follow</button>-->
-						<!--<button type="button" class="btn btn-danger btn-sm">Message</button>-->
+						<a href = <%= url + '/edit' %> ><button type="button" class="btn btn-success btn-sm">Edit</button></a>
+						<a href = <%= url + '/delete' %> ><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
 					</div>
 					
 					<!-- END SIDEBAR BUTTONS -->

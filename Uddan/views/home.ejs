@@ -18,8 +18,8 @@
 				<input class = "search-form" type = "text" name = "dest" placeholder = "Destination" required>
 			</div>
 			<div class="date">	
-				<!--min = <%= /*( new Date() ).toISOString().split('T')[0]*/ %>-->
-				<input class = "search-form" type = "date" name = "depDate" placeholder = "Departure Date" required >
+				<!--*/ %>-->
+				<input class = "search-form" type = "date" name = "depDate" placeholder = "Departure Date" required min = <%= ( new Date() ).toISOString().split('T')[0] %> >
 			</div>
 			<div class="options">
 				<input class = "search-form" type = "number" name = "totalPeople" placeholder = "No. Of People" required min = "1">
