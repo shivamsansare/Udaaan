@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+
+<% passenger.forEach(function(p){ %>
+
+<div class = "container">
+    <div class = "card">
+        <div>
+            Name := <%= p['firstname'] %> <%= p['lastname'] %>
+        </div>
+        <div>
+            Age := <%= p['age'] %>
+        </div>
+        <div>
+            Email := <%= p['email'] %>
+        </div>
+        <div>
+            Phone No := <%= p['phoneno'] %>
+        </div>
+        <div>
+            <a href = "/passenger/<%= p['PID'] %>">For More Details click here</a>
+        </div>
+    </div>
+</div>
+
+<% }); %>
+
+<% include ../partials/footer %>

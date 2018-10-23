@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+
+	<div class = "container">
+		<form role="form" class = "form-horizontal" id = "entered" action="/login" method="POST">
+			<div id = "alert"></div>
+			<div class="form-group row">
+				<div class = "col-sm-2"></div>
+				<label for = "email" class = "control-label col-sm-2" style = "color : white;">
+					Enter your email id:-
+				</label>
+				<div class = "col-sm-6"><input type="email" class="form-control" id="emailid" placeholder="Enter email" name="email" required></div>
+				<div class = "col-sm-2"></div>
+			</div>
+			<div class="form-group row">
+				<div class = "col-sm-2"></div>
+				<label for = "password" class = "control-label col-sm-2" style = "color : white;">
+					Enter password:-
+				</label>
+				<div class = "col-sm-6"><input type="password" class="form-control" id="password" placeholder="Enter password" name="pwd" Required></div>
+				<div class = "col-sm-2"></div>
+			</div>
+			<div class="form-group row">
+				<div class = "col-sm-2"></div>
+				<label for = "confirmpassword" class = "control-label col-sm-2" style = "color : white;">
+					Re-enter password:-
+				</label>
+				<div class = "col-sm-6"><input type="password" class="form-control" id="confirmpassword" placeholder="Confirm password" name="cpwd" Required></div>
+				<div class = "col-sm-2"></div>
+			</div>
+			<div class = "row">
+				<hr>
+				<div class = "col-sm-5"></div>
+				<button class="btn btn-primary btn-block form-control col-sm-2" type = "submit">Submit</button>
+				<div class = "col-sm-2"></div>
+			</div>
+		</form>
+	</div>
+	
+<% include ../partials/footer %>

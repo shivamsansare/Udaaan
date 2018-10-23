@@ -1,0 +1,61 @@
+<% include ../partials/header %>
+<head>
+    <link rel = "stylesheet" href = "/stylesheets/eatery.css">
+    
+    <!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	
+	<script type = "text/javascript" src = "/js/effect.js"></script>
+    
+</head>
+
+
+
+<div class = "container">
+    <div class="row panel text-center" style="color:white" >
+        <h4><i class="fab fa-apple"></i> Select your Meals</h4>
+    </div>
+</div>
+
+<div class = "container">
+    <div class="row panel text-center" >
+    
+    <% eatery.forEach(function(f){  %>
+    
+
+        <div class="col-lg-4 col-md-4 col-sm-6" style="padding:10px">            
+            
+            <div>
+                
+                <div class="flip-card card">
+                    <div class="flip-card-inner">
+  
+                        <div class="flip-card-front">
+                            <img class="card-img-top" src="<%= f['url'] %>" style="width:100%">
+                        </div>
+                    
+                    </div>
+                     
+                    <h5>
+                        <%= f['name'] %>
+                    </h5>
+                    <h6 class = "card-title price"><i class="fas fa-rupee-sign"></i><%= f['price'] %> </h6>
+                    
+                    <p>
+                        <a href="<%= url + '/' + f['Food_id'] + '/final' %>" class="btn btn-primary">Add</a>
+                   </p>
+  
+                </div>
+                
+            </div>
+          
+        </div>
+
+    <% }) %>
+
+    </div>
+</div>
+
+
+
+<% include ../partials/footer %>

@@ -1,0 +1,160 @@
+<% include ../partials/header %>
+	
+	
+	<script>
+		$(document).ready(function(){
+	  $("#myInput").on("keyup", function() {
+		var value = $(this).val().toLowerCase();
+		$(".myTable #my").filter(function() {
+		  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		});
+	  });
+	});
+	
+	
+	</script>
+
+
+	<!------ Include the above in your HEAD tag ---------->
+	<link rel = "stylesheet" href = "/stylesheets/flight.css">
+
+	
+<div class = "container" style="padding-bottom:30px;padding-left:47px;padding-right:47px;color: #5a7391;font-weight:600;">
+
+	<div class="row panel img-thumbnail img-fluid" style="padding:10px">
+
+
+		<div class="col-lg-5 col-sm-3">
+			<%= sources %>  <i class="fas fa-arrow-circle-right"></i> <%= dests %>
+		</div>
+		
+		
+		<div class="col-lg-4 col-sm-3">
+			<i class="far fa-calendar-alt"> <%= depts %></i>
+		</div>
+		
+		
+		<div class="col-lg-3 col-sm-3">
+			<i class="fas fa-users"> <%= number %></i> 
+		</div>
+						
+	</div>
+
+</div>
+
+							
+	<div class="container">
+		<div class="row profile">
+			<div class="col-md-3">
+				<div class="profile-sidebar">
+					<div class = "container" style="padding-bottom:30px;padding-left:30px;padding-right:30px;color: #5a7391;font-weight:600;">
+		
+						<div class="row">
+							
+						<input id="myInput" type="text" placeholder="  Filter" style="border-radius:5px 5px 5px 5px;">
+						   
+						</div>
+			
+					</div>
+				</div>
+			</div>
+			
+			<% if(flight.length == 0){ %>
+			<div class = "card" style = "color: #5a7391;font-weight:600;">
+				<p class = "card-title">No Flights available right now. Try again Later!!</p>
+			</div>
+			<br>
+			<% } else { %>
+				<div class="col-md-9">
+					<div class="profile-content"> 
+							<div class = "container" style="padding-bottom:30px;padding-left:30px;padding-right:30px;color: #5a7391;font-weight:600;">
+			
+								<div class="row panel img-thumbnail img-fluid">
+									
+									<div class="col-lg-2 col-sm-2">
+										Company
+									</div>
+									<div class="col-lg-2 col-sm-2">
+										Departure
+									</div>
+									<div class="col-lg-2 col-sm-2">
+										Arrival
+									</div>
+									<!--<div class="col-lg-2 col-sm-2">-->
+									<!--    Departure Date-->
+									<!--</div>-->
+									 <div class="col-lg-2 col-sm-2">
+										Economy 
+									</div>
+									 <div class="col-lg-2 col-sm-2">
+										Business 
+									</div>
+								</div>
+					
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="container">
+			<div class="row profile">
+				<div class="col-md-3">
+					<div class="profile-sidebar">
+						<div class = "container" style="padding-bottom:30px;padding-left:30px;padding-right:30px;color: #5a7391;font-weight:600;">
+			
+							<div class="row">
+								
+							
+							</div>
+				
+						</div>
+					</div>
+				</div>
+					
+					
+				<div class="col-md-9">
+					<div class="profile-content">
+						<div class = "container" style="color:black">
+	
+							<% flight.forEach(function(f){ %>
+							<form action = '/flight/<%= parseInt(f['FFID']) %>/<%= f['Dep_dateTime'].toISOString() %>' method = "get" class="myTable">
+								<div class="container" style="padding-bottom:30px;color: #5a7391;font-weight:600;">
+									<div class="row panel img-thumbnail img-fluid" id=my>
+									 
+									 
+										<div class="col-lg-2 col-sm-2">
+											<%= f['name'] %>
+										</div>
+										<div class="col-lg-2 col-sm-2">
+											<%= f['dep'] %>
+										</div>
+										<div class="col-lg-2 col-sm-2">
+											<%= f['arrival'] %>
+										</div>
+										<div class="col-lg-2 col-sm-2">
+											<input type="radio" name="Price" value="<%= f['EPrice'] %>" required><i class="fas fa-rupee-sign"></i><%= f['EPrice'] %>
+										</div>
+										<div class="col-lg-2 col-sm-2">
+											<input type="radio" name="Price" value="<%= f['BPrice'] %>" required><i class="fas fa-rupee-sign"></i><%= f['BPrice'] %>
+										</div>
+										<div class="col-lg-2 col-sm-2">
+											<button type = "submit" class = "btn btn-primary" >Book</submit>
+										</div>
+									</div>
+								</div>
+							</form>
+							<% });%>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<% } %>
+
+<br>
+
+<% include ../partials/footer %>

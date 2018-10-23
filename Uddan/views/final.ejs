@@ -1,0 +1,104 @@
+<% include partials/header %>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<script>
+	$(document).ready(function(){
+		$("#myInput").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#myTable tr").filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		});
+	});
+</script>
+
+<link rel = "stylesheet" href = "/stylesheets/eshow.css">
+<center><h2>Final Check Table</h2>
+<p>Please check the details and then proceed for payment</p></center>  
+<center><input id="myInput" type="text" placeholder="Search.."style="border-radius:5px 5px 5px 5px;"></center>
+<br><br>
+
+<div class="container">
+	<div class="col-lg-4"></div>
+	<div class = "container">
+		<div class="col-lg-12">
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>
+							<table width = "50%">
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Age</th>
+							</table> 
+						</th>
+						<th>Quantity</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody id="myTable">
+					<tr>
+						<% if(totalPassengers == 1){ %>
+							<td>Ticket</td>
+						<% } else { %>
+							<td >Tickets</td>
+						<% } %>
+						<td>
+							<table width = "50%">
+								<% p.forEach( function(p) { %>
+									<tr>
+										<td><%= p['firstname'] %></td>
+										<td><%= p['lastname'] %></td>
+										<td><%= p['age'] %></td>
+									</tr>
+								<% }); %>
+							</table>
+						</td>
+						<td ><%= totalPassengers %></td>
+						<td ><i class="fas fa-rupee-sign"></i><%= totalPassengers*price %></td>
+					</tr>
+					<tr>
+						<% f.forEach(function(f){  %>
+							<td>Food</td>
+							<td><%= f['name'] %></td>
+							<td><%= totalPassengers %></td>
+							<td><i class="fas fa-rupee-sign"></i><%= totalPassengers*f['price'] %></td>
+						<% }) %>
+					</tr>
+					<tr>
+						<% f.forEach(function(f){  %>
+							<td colspan=3> Total</td>
+							<td><i class="fas fa-rupee-sign"></i><%= totalPassengers*price + totalPassengers*f['price'] %></td>
+						<% }) %>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-lg-4"></div>
+	</div>
+	<br>
+	<% if( !food ){ %>
+		<form action = "<%= url + '/eatery' %>" method = "get">
+			<div class = "row">
+				<div class = "col-sm-12 col-lg-4">
+					<center><button class = "btn btn-primary" type = "submit">Add Eatery</button></center>
+				</div>
+				<div class = "col-lg-4 "></div>
+				<div class = "col-lg-4 "></div>
+			</div>
+		</form>
+	<% }; %>
+	<form action = "<%= url + '/payment' %>" method = "get">
+		<div class = "row">
+			<div class = "col-lg-4 "></div>
+			<div class = "col-lg-4 "></div>
+			<div class = "col-sm-12 col-lg-4 justify-content-center">
+				<center><button class = "btn btn-danger" type = "submit">Payment</button></center>
+			</div>
+		</div>
+	</form>
+</div>
+<% include partials/footer %>

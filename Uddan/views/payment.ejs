@@ -1,0 +1,26 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<title>Successfully</title>
+		<link rel="shortcut icon" type="image/png" href="/stylesheets/logo.png">
+		<link rel="stylesheet" href="/stylesheets/payment.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class = "container d-flex justify-content-center" style = "margin-top : 10%">
+			<div class="jumbotron">
+				<center>
+					<h1 class="display-4">Thank You!</h1>
+					<p class="lead"></p>
+					<hr class="my-4">
+					<% if(totalPassengers == 1){ %>
+						<p>You have successfully Booked your Ticket.</p>
+					<% } else { %>
+						<p>You have successfully Booked your Tickets.</p>
+					<% } %>
+					<a class="btn btn-primary btn-lg" href="/" role="button">Home page</a>
+				</center>
+			</div>
+		</div>
+	</body>
+</html>

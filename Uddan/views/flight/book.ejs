@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+
+<link rel = "stylesheet" href = "/stylesheets/book.css">
+
+<% var passengers = {} %>
+
+<div class = "container">
+	<h3 style = "color: white;">Enter Passenger Details</h3>
+	<p style = "color: white;">Please enter details as on Goverment ID proof</p>
+	<form action = "<%= url + '/traveller' %>" method = "post">
+		<% for( var i = 0;i < totalPassengers;i++){ %>
+			<div class = "row">
+				<div class = "col-xs-12 col-lg-2" style = "color:white;">
+					<label>Passenger <%= i+1 %></label>
+				</div>
+				<div class = "col-xs-12 col-lg-4 form-group">
+					<input class = "form-control" type = "text" placeholder = "Enter First name" name = 'passengers[<%= i %>][firstname]' required >
+				</div>
+				<div class = "col-xs-12 col-lg-4 form-group">
+					<input class = "form-control" type = "text" placeholder = "Enter Last name" name = 'passengers[<%= i %>][lastname]'required >
+				</div>
+				<div class = "col-xs-12 col-lg-2 form-group">
+					<input class = "form-control" type = "integer" placeholder = "Enter Age" name = 'passengers[<%= i %>][age]' required>
+				</div>
+			</div>
+			<% } %>
+		<p style = "color: white;">Details regarding confirmation will be sent via email and/or phone number</p>
+		<div class = "row">
+			<div class = "col-lg-10"></div>
+			<div class = "col-sm-12 col-lg-2">
+				<button class = "btn btn-block btn-primary" type = "submit">Book</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+<% include ../partials/footer %>

@@ -1,0 +1,311 @@
+<% include ../partials/header %>
+
+    
+        <div class = "container">
+            <form action = "/flight" method = "post">
+                <label class = "control-label col-sm-5" style = "color:white;">
+				   <h4>Flight Creation</h4> 
+				</label>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Flight ID:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="fid" placeholder="ID"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Source:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="text" name="source" placeholder="Source"></div>    <div class = "col-sm-2"></div>
+                    <div class = "col-sm-2"></div>
+
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Destination:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="text" name="destination" placeholder="Destination"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Flight Company GSTR_No.:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="flgstr_no" placeholder="GSTR NO:-"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Seating Capacity:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="seating_cap" placeholder="Seating Capacity"></div>
+                    <div class = "col-sm-2"></div>
+
+                </div>
+                
+                
+                <div class = "form-group row">
+    				<hr>
+    				<div class = "col-sm-5"></div>
+    				<button class="btn btn-primary btn-block col-sm-2" type = "submit">Submit</button>
+    				<div class = "col-sm-2"></div>
+			    </div>
+                
+            </form>
+        </div>
+        
+        <div class = "container">
+            <form action = "/flight" method = "post">
+                 
+                 <label class = "control-label col-sm-5" style = "color:white;">
+				   <h4>Flight Instance Creation</h4> 
+				</label>
+				
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Flight ID:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="ffid" placeholder="ID"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter DEparture DateTime:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="datetime-local" name="dep" placeholder="Departure Time"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Arrival DateTime:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="datetime-local" name="arrival" placeholder="Arrival Time"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter the Instance:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="inst" placeholder="Instance"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter From Gate:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="fromgate" placeholder="From Gate No."></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter From Code:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="fromcode" placeholder="From Airport Code"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter To Gate:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="togate" placeholder="To Gate No."></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter To Code:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="tocode" placeholder="To Airport Code"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Economy seats:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="eseats" placeholder="Economy Seats"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Economy Price:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="eprice" placeholder="Economy Price"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Business Seats:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="bseats" placeholder="Business Seats"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Business Price:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="bprice" placeholder="Business Price"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                 <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Number:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="my" placeholder="1 for Flight Instance Creation"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class = "form-group row">
+    				<hr>
+    				<div class = "col-sm-5"></div>
+    				<button class="btn btn-primary btn-block col-sm-2" type = "submit">Submit</button>
+    				<div class = "col-sm-2"></div>
+			    </div>
+            </form>
+        </div>
+        
+        
+        <div class = "container">
+            <form action = "/flight" method = "post">
+                <label class = "control-label col-sm-5" style = "color:white;">
+				   <h4>Company Enrollment</h4> 
+				</label>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter your GSTR_No.:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="gstr_no" placeholder="GSTR NO:-"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Company Name:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="text" name="cname" placeholder="Company Name"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Company Address:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="text" name="caddress" placeholder="Company Address"></div>    <div class = "col-sm-2"></div>
+                    <div class = "col-sm-2"></div>
+
+                </div>
+            
+                
+                <div class = "form-group row">
+    				<hr>
+    				<div class = "col-sm-5"></div>
+    				<button class="btn btn-primary btn-block col-sm-2" type = "submit">Submit</button>
+    				<div class = "col-sm-2"></div>
+			    </div>
+                
+            </form>
+        </div>
+        
+        
+        <div class = "container">
+            <form action = "/flight" method = "post">
+                <label class = "control-label col-sm-5" style = "color:white;">
+				   <h4>New Food Registration</h4> 
+				</label>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Food ID:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="foodid" placeholder="Food ID"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+            
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Food Name:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="text" name="fname" placeholder="Food Name"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Food Price:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="foodprice" placeholder="Food Price"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Food Company GSTR_No.:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="integer" name="foodgstr_no" placeholder="Food GSTR NO:-"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class = "col-sm-2"></div>
+                    <label class = "control-label col-sm-2" style = "color:white;">
+					Enter Food Image URL:-
+				    </label>
+                    <div class = "col-sm-6"><input class="form-control" type="url" name="furl" placeholder="Food URL"></div>    <div class = "col-sm-2"></div>
+                    <div class = "col-sm-2"></div>
+                </div>
+                
+                <div class = "form-group row">
+    				<hr>
+    				<div class = "col-sm-5"></div>
+    				<button class="btn btn-primary btn-block col-sm-2" type = "submit">Submit</button>
+    				<div class = "col-sm-2"></div>
+			    </div>
+                
+            </form>
+        </div>
+    
+<% include ../partials/footer %>

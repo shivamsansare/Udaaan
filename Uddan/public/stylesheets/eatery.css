@@ -1,0 +1,78 @@
+body{
+	width : 100%;
+	height : 100%;
+}
+
+p{
+	color : white;
+}
+
+div{
+	color : black ;
+}
+
+.thumb{
+	padding-bottom: 50px;
+}
+
+/*.flip-card:hover{*/
+/*  transform: rotateY(180deg);*/
+/*}*/
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+	width: 100%;
+	height: 100%;
+	/*backface-visibility: hidden;*/
+}
+
+.flip-card-front {
+	/*background-color: #bbb;*/
+	color: black;
+}
+
+.flip-card-back {
+	/*background-color: #2980b9;*/
+	/*color: white;*/
+	transform: rotateY(180deg);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  border : none;
+  display : block;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card a{
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin : 0;
+  border-radius : 0rem;
+}
+
+.card a:hover {
+  opacity: 0.7;
+}

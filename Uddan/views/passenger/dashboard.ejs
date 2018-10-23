@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Airline Reservation system</title>
+	
+	<!--meta tag for responsiveness-->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+ <!--   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+ <!--   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+	
+	<!--Bootstrapv4.0 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	<script>
+		$(document).ready(function(){
+    		$("#account").click(function(){
+        		$("p:first").replaceWith("<p>This page is currently under progress <br> Try again later or Contact Us</p>");
+    		});
+		});
+	</script>	
+		
+	<script>
+		$(document).ready(function(){
+    		$("#profile").click(function(){
+        		$("p:first").replaceWith("<p>shivam<br>sansaew</p>");
+    		});
+		});
+	</script>
+	
+		<script>
+		$(document).ready(function(){
+    		$("#history").click(function(){
+        		$("p:first").replaceWith("<p>dsmkddmka</p>");
+    		});
+		});
+	</script>
+	
+		<script>
+		$(document).ready(function(){
+    		$("#help").click(function(){
+        		$("p:first").replaceWith("<p>For Help Contact Us on <br> Shivam Sansare : shivam.sansare@somaiya.edu <br> Dhruvil Shah : dhruvil.s@somaiya.edu</p>");
+    		});
+		});
+	</script>
+	
+    <!-- Emoji stylesheet -->
+    <!--<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">-->
+        
+    <link rel="shortcut icon" type="image/png" href="/stylesheets/logo.png">
+    
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	<nav class = "navbar navbar-expand-lg bg-dark navbar-dark " style = "margin-bottom : 25px;">
+		<div class = "container">
+			<!-- for home icon-->
+			<a class = "navbar-brand" href = "/"><i class="fas fa-home"></i>Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			   <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class = "navbar-nav ml-auto">
+					<% if(isAuthenticated === false){ %>
+						<li class = "nav-item"><a class = "nav-link" href="/login">Login<i class="fas fa-sign-in-alt"></i></a></li>
+						<li class = "nav-item"><a class = "nav-link" href="/signup">Signup<i class="fas fa-user-plus"></i></a></li>
+					<% } else {%>
+						<li class = "nav-item"><a class = "nav-link" href="/passenger %>"><i class="fas fa-user"></i>Profile</a></li>
+						<li class = "nav-item"><a class = "nav-link" href="/logout"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+					<% }; %>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+
+<!------ Include the above in your HEAD tag ---------->
+ <link rel = "stylesheet" href = "/stylesheets/dashboard.css">
+<!--
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+-->
+
+<div class="container">
+    <div class="row profile">
+		<div class="col-md-3">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USERPIC -->
+				<div class="profile-userpic">
+				
+				</div>
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
+					<div class="profile-usertitle-name">
+						Shivam Sansare
+					</div>
+					<div class="profile-usertitle-job">
+						Admin
+					</div>
+				</div>
+				<!-- END SIDEBAR USER TITLE -->
+				<!-- SIDEBAR BUTTONS -->
+				<div class="profile-userbuttons">
+					<button type="button" class="btn btn-success btn-sm">Follow</button>
+					<button type="button" class="btn btn-danger btn-sm">Message</button>
+				</div>
+				<!-- END SIDEBAR BUTTONS -->
+				<!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a href='#' id=profile>
+							<i class="fas fa-home"></i>
+							Profile</a>
+						
+						</li>
+						<li class = "nav-item">
+							<a href="#" id=account>
+							<i class="fas fa-user"></i>
+							Account Settings </a>
+						</li>
+						<li class = "nav-item">
+							<a href="#" id=history>
+							<i class="fas fa-check"></i>
+							History </a>
+						</li>
+						<li class = "nav-item">
+							<a href="#" id=help>
+							<i class="fas fa-flag"></i>
+							Help </a>
+						</li>
+						<li>
+	   						<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-envelope-open"></i>Contact Us</a>
+	   						<ul class="collapse list-unstyled" id="pageSubmenu">
+	   							<li>
+	   								<a href="#">shivam.sansare@somaiya.edu</a>
+	   							</li>
+	   							<li>
+	   								<a href="#">dhruvil.s@somaiya.edu</a>
+	   							</li>
+	   						</ul> 
+   						</li>
+					</ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+		</div>
+		<div class="col-md-9">
+            <div class="profile-content">
+			   <p>Shivam Sansare</p>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+<% include ../partials/footer %>

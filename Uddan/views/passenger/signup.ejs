@@ -1,0 +1,70 @@
+<% include ../partials/header %>
+	<div class = "container">
+		<form role="form" id = "entered" action="/passenger" method="POST">
+			<div id = "alert"></div>
+			<div class="form-group row">
+				<div class = "col-sm-2"></div>
+				<label class = "control-label col-sm-2" for = "email" style = "color:white;">
+					Enter email id:
+				</label>
+				<div class = "col-sm-6"><input type="email" class="form-control" id="emailid" placeholder="Enter email" name="signup[email]" required></div>
+				<div class = "col-sm-2"></div>
+			</div>
+			<div class="form-group row">
+				<div class = "col-sm-2"></div>
+				<label class = "control-label col-sm-2" for = "Phone No." style = "color:white;">
+					Enter Phone no:
+				</label>
+				<div class = "col-sm-6"><input type="number" class="form-control" id="Phone No." placeholder="Enter Phone No." name="signup[PhoneNo]" required></div>
+				<div class = "col-sm-2"></div>
+			</div>
+			<div class="form-group row">
+				<div class = "col-sm-2"></div>
+				<label class = "control-label col-sm-2" for = "First Name" style = "color:white;">
+					Enter your First Name:-
+				</label>
+				<div class = "col-sm-6"><input type="text" class="form-control" id="First Name" placeholder="Enter First Name" name="signup[FirstName]" required></div>
+				<div class = "col-sm-2"></div>
+			</div>
+			<div class="form-group row">
+				<div class = "col-sm-2"></div>
+				<label class = "control-label col-sm-2" for = "Last Name" style = "color:white;">
+					Enter your Last Name:-
+				</label>
+				<div class = "col-sm-6"><input type="text" class="form-control" id="Last Name" placeholder="Enter Last Name" name="signup[LastName]" required></div>
+				<div class = "col-sm-2"></div>
+			</div>
+			<div class="form-group row">
+				<div class = "col-sm-2"></div>
+				<label class = "control-label col-sm-2" for = "Age" style = "color:white;">
+					Enter your Age:-
+				</label>
+				<div class = "col-sm-6"><input type="text" class="form-control" id="Age" placeholder="Enter Age" name="signup[age]" required></div>
+				<div class = "col-sm-2"></div>
+			</div>
+			<div class="form-group row">
+				<div class = "col-sm-2"></div>
+				<label class = "control-label col-sm-2" for = "password" style = "color:white;">
+					Enter your password:-
+				</label>
+				<div class = "col-sm-6"><input type="password" class="form-control" id="password" placeholder="Enter password" name="signup[pwd]" Required></div>
+				<div class = "col-sm-2"></div>
+			</div>
+			<div class="form-group row">
+				<div class = "col-sm-2"></div>
+				<label class = "control-label col-sm-2" for = "confirmpassword" style = "color:white;">
+					Re-enter your password:-
+				</label>
+				<div class = "col-sm-6"><input type="password" class="form-control" id="confirmpassword" placeholder="Confirm password" name="signup[cpwd]" Required></div>
+				<div class = "col-sm-2"></div>
+			</div>
+			<div class = "row">
+				<hr>
+				<div class = "col-sm-5"></div>
+				<button class="btn btn-primary btn-block col-sm-2" type = "submit">Submit</button>
+				<div class = "col-sm-2"></div>
+			</div>
+		</form>
+	</div>
+
+<% include ../partials/footer %>

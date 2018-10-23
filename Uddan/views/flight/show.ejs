@@ -1,0 +1,52 @@
+<% include ../partials/header %>
+
+<% var date = f['Dep_DateTime'].toString().split(" "),depDate =  date[0]+" "+date[1]+" "+date[2]+" "+date[3]+" ",depTime = date[4]; %>
+<% var date1 = f['Arrival_DateTime'].toString().split(" "),arrDate =  date1[0]+" "+date1[1]+" "+date1[2]+" "+date1[3]+" ",arrTime = date1[4]; %>
+<style>
+	center i{
+		padding : 0 2px;
+	}
+</style>
+<div class = "flight container" style = "color: #5a7391;font-weight:600;">
+	<div class = "row panel">
+		<div class = "col-sm-2 col-lg-2"></div>
+		<div class = "card col-sm-8 col-lg-8">
+			<div class = "card-body">
+				<h2 class = "card-title"><%= f['source'] %> <i class="fas fa-plane"></i> <%= f['destination'] %></h2>
+				<div class = "row">
+					<div class = "card-text col-sm-4 col-lg-5" style = "padding : 5px 0; ">
+						<center>
+							Departure Details<hr>
+							<i class="far fa-calendar-alt"></i> <%= depDate %>
+							<i class="far fa-clock"></i> <%= depTime %><br>
+							<i class="fas fa-plane-departure"></i> <%= f['s_name'] %><br>
+							<i class="fas fa-city"></i><%= f['s_city'] %>
+						</center>
+					</div>
+					<div class = "col-sm-4 col-lg-2"></div>
+					<div class = "card-text col-sm-4 col-lg-5" style = "padding : 5px 0; ">
+						<center>
+							Arrival Details<hr>
+							<i class="far fa-calendar-alt"></i> <%= arrDate %>
+							<i class="far fa-clock"></i> <%= arrTime %><br>
+							<i class="fas fa-plane-arrival"></i> <%= f['t_name'] %><br>
+							<i class="fas fa-city"></i><%= f['t_city'] %>
+						</center>
+					</div>
+				</div>
+				<div class = "card-text" style = "padding : 5px 0">
+					Price = <i class = "fas fa-rupee-sign"></i><%= price %>
+				</div>
+				<!--<div>-->
+				<!--    Seats Available := <%= parseInt(f['seating_cap'])  %>-->
+				<!--</div>-->
+				<a class = "btn btn-primary card-link" href = <%= url.split('?')[0] + '/passenger/' + user_id %> >Book</a>
+			</div>
+		</div>
+		<div class = "col-sm-2 col-lg-2"></div>
+	</div>
+</div>
+
+
+
+<% include ../partials/footer %>

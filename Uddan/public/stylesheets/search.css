@@ -1,0 +1,60 @@
+.search-form{
+	width : 20%;
+	border : none;
+	float:left;
+	height : 3rem;
+	text-align:center;
+	outline : none;
+}
+
+.from{
+	border-radius : 7px 0 0 7px;
+}
+
+.search-form:hover{
+	border-bottom : solid #007bff 2px;
+}
+
+.search-button{
+	width : 20%;
+	border: none;
+	height : 3rem;
+	color : white;
+	outline : none;
+	border-radius : 0 7px 7px 0;
+}
+
+#cards{
+	opacity:0.0;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+	width: 100%;
+	height: 100%;
+	/*backface-visibility: hidden;*/
+}
+
+.flip-card-front {
+	/*background-color: #bbb;*/
+	color: black;
+}
+
+.flip-card-back {
+	/*background-color: #2980b9;*/
+	/*color: white;*/
+	transform: rotateY(180deg);
+}
