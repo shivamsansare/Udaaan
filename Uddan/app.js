@@ -1,7 +1,7 @@
 var bodyParser		= require('body-parser'),
 	cookieParser	= require('cookie-parser'),
 	con 			= require('./models'),
-	local			= require('./models/passport-local-mysql'),
+	LocalStrategy	= require('./passport-local-mysql'),
 	express			= require("express"),
 	passport		= require('passport'),
 	session 		= require('express-session'),
@@ -70,10 +70,10 @@ app.use(function(req,res,next){
 	res.locals.url = req.originalUrl;
 	next();
 });
-
+var local = new LocalStrategy(con,"passenger");
 passport.serializeUser( local.serializeUser );
 passport.deserializeUser( local.deserializeUser );
-passport.use( local.strategy );
+passport.use( local.strategy() );
 
 app.use("/",indexRoutes);
 app.use("/passenger",passengerRoutes);
