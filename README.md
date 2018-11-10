@@ -15,55 +15,55 @@ Snapshots of the webpage:-
 
 * Home: 
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Home.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Home.PNG)
 
 * Search Page:
 No Flights:
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Search_No_Flights.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Search_No_Flights.PNG)
 
 Flight present:
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Search.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Search.PNG)
 
 * Flight Details: 
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Flight_Details.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Flight_Details.PNG)
 
 * Invoice (No Food):
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Final_Non_eatery.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Final_Non_eatery.PNG)
 
 * Eatery: 
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Eatery.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Eatery.PNG)
 
 * Invoice (With Food):
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Final_Eatery.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Final_Eatery.PNG)
 
 
 * Thank You
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Thank_you.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Thank_you.PNG)
 
 
 * Sign Up:
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Sign_up.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Sign_up.PNG)
 
 * Sign Up (Modal):
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Signup_modal.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Signup_modal.PNG)
 
 * Login:
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Login.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Login.PNG)
 
 * Profile:
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Profile_home.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Profile_home.PNG)
 
 * Admin:
 
-![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Admin.PNG)
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Admin.PNG)
