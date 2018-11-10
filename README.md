@@ -1,6 +1,6 @@
 # Udaan
 
-Airline Resservation System, beta program
+Airline Reservation System, beta program
 It uses a custom mysql database to reserve aeroplane tickets
 Note that this ticket is dummy and won't work for actual reservation.
 
@@ -10,3 +10,44 @@ Note that this ticket is dummy and won't work for actual reservation.
 
 
 ## Ignore any mistakes as we are new to coding and the project has heavy backend. Feel free to mail us about the bugs or leave a comment. Thank You!!!
+
+Snapshots of the webpage:-
+
+* Home: 
+
+
+* Search Page:
+No Flights:
+	
+
+Flight present:
+
+
+* Flight Details: 
+
+
+
+* Invoice (No Food):
+
+
+
+* Eatery: 
+
+
+* Invoice (With Food):
+
+
+* Thank You
+
+
+* Sign Up:
+
+
+* Sign Up (Modal):
+
+
+* Login:
+
+
+* Profile:
+
