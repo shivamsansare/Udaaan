@@ -15,39 +15,55 @@ Snapshots of the webpage:-
 
 * Home: 
 
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Home.PNG)
 
 * Search Page:
 No Flights:
-	
+
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Search_No_Flights.PNG)
 
 Flight present:
 
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Search.PNG)
 
 * Flight Details: 
 
-
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Flight_Details.PNG)
 
 * Invoice (No Food):
 
-
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Final_Non_eatery.PNG)
 
 * Eatery: 
 
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Eatery.PNG)
 
 * Invoice (With Food):
+
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Final_Eatery.PNG)
 
 
 * Thank You
 
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Thank_you.PNG)
+
 
 * Sign Up:
 
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Sign_up.PNG)
 
 * Sign Up (Modal):
 
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Signup_modal.PNG)
 
 * Login:
 
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Login.PNG)
 
 * Profile:
 
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Profile_home.PNG)
+
+* Admin:
+
+![alt text](https://github.com/GodKiller98/Udaan/SnapShots/Admin.PNG)
