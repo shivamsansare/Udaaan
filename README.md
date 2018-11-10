@@ -1,4 +1,4 @@
-# Udaan
+# Udaaan
 
 Airline Reservation System, beta program
 It uses a custom mysql database to reserve aeroplane tickets
@@ -67,3 +67,4 @@ Flight present:
 * Admin:
 
 ![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Admin.PNG)
+
