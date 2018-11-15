@@ -10,3 +10,61 @@ Note that this ticket is dummy and won't work for actual reservation.
 
 
 ## Ignore any mistakes as we are new to coding and the project has heavy backend. Feel free to mail us about the bugs or leave a comment. Thank You!!!
+
+Snapshots of the webpage:-
+
+* Home: 
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Home.PNG)
+
+* Search Page:
+No Flights:
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Search_No_Flights.PNG)
+
+Flight present:
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Search.PNG)
+
+* Flight Details: 
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Flight_Details.PNG)
+
+* Invoice (No Food):
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Final_Non_eatery.PNG)
+
+* Eatery: 
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Eatery.PNG)
+
+* Invoice (With Food):
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Final_Eatery.PNG)
+
+
+* Thank You
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Thank_you.PNG)
+
+
+* Sign Up:
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Sign_up.PNG)
+
+* Sign Up (Modal):
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Signup_modal.PNG)
+
+* Login:
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Login.PNG)
+
+* Profile:
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Profile_home.PNG)
+
+* Admin:
+
+![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Admin.PNG)
+
