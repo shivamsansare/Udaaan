@@ -12,7 +12,7 @@ Snapshots of the webpage:-
 
 * Home: 
 
-![alt text](https://github.com/GodKiller98/Udaan/blob/master/SnapShots/Home.PNG)
+![alt text](https://github.com/shivamsansare/Udaan/blob/master/SnapShots/Home.PNG)
 
 * Search Page:
 No Flights:
